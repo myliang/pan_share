@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "baidu <=> 360 with pan",
+  "description": "send data to baidu(or 360) from baidu(or 360)",
+  "version": "1.0",
+
+  // "content_scripts": [{
+  //   "matches": ["*://*/*"],
+  //   "js": ["invoke.js"]
+  // }],
+
+  "permissions": [
+    "*://*/*", "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
+
+// chrome.tabs.executeScript(null, {file: "content_script.js"});
